@@ -26,13 +26,14 @@ body {
 
 .title{
     text-align: center;
-    font-size: 20px;
+    font-size: 6vmin;
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: black;
 }
 
 .scoreboard {
     display: flex;
+    flex-flow: row wrap;
     text-align: center;
     background: rgba(0, 0, 0, 0.9);
     max-width: 80%;
@@ -44,36 +45,53 @@ body {
     padding: 10px;            
 }
 
+.scoreboard > * {
+  flex: 1 100%;
+}
+
 .container {
     border: 3px solid white;
-    max-height: 60px;
-    max-width: 110px;
+    max-height: 10vmin;
+    max-width: 20vmin;
     margin: auto;
     margin-bottom: 25px;
+    padding-bottom: 10px;
 }
 
 .away {
-    float: left;
+    display: flex;
+    flex-flow: column wrap;
+    flex: 1 0 0;
+    justify-content: center; 
     width: 50%;
 }
 
 .home {
-    float: left;
+    display: flex;
+    flex-flow: column wrap;
+    flex: 1 0 0;
+    justify-content: center; 
     width: 50%;
 }
 
 .buttons {
-    
+    padding-top: 10px;
+    color: black;
+    font-weight: bold;
+    width: 33vmin;
+    height: 15vmin;
+    font-size: 5vmin;
 }
 
 h1 {
     -webkit-text-fill-color: whitesmoke;
+    font-size: 6vmin;
 }
 
 h2 {
     font-family: bpdotsdiamondbold;
     -webkit-text-fill-color: whitesmoke;
-    font-size: 50px;
+    font-size: 9vmin;
     margin: auto;
 }
 
